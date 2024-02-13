@@ -1,15 +1,15 @@
-import Search from '../components/Search'
+import Search from "../components/Search";
 import SchoolCard from "../components/SchoolCard";
 import SideBarCard from "../components/SideBarCard";
-import bukLogo from '@/public/BUK.jpg'
-import Image from 'next/image';
+import bukLogo from "@/public/BUK.jpg";
+import Image from "next/image";
 const page = () => {
   return (
     <div>
       <div>
         <Search placeholder={"search school"} />
       </div>
-      <div className="flex gap-5 my-8">
+      <div className="flex; gap-5 my-8">
         <div>
           <h1>Exams Available</h1>
           <SideBarCard image={bukLogo} name={"waec"} />
@@ -78,6 +78,6 @@ const page = () => {
       </div>
     </div>
   );
-}
+};
 
-export default page
+export default page;
