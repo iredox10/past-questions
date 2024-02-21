@@ -9,7 +9,7 @@ const page = () => {
       <div>
         <Search placeholder={"search school"} />
       </div>
-      <div className="flex; gap-5 my-8">
+      <div className="flex gap-5 my-8">
         <div>
           <h1>Exams Available</h1>
           <SideBarCard image={bukLogo} name={"waec"} />

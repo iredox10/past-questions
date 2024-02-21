@@ -1,9 +1,9 @@
-import Image from 'next/image'
+import Image from "next/image";
 import bukLogo from "@/public/BUK.jpg";
 import SchoolHeader from "../../components/SchoolHeader";
-import Search from '@/app/components/Search';
-import DepartmentCard from '@/app/components/DepartmentCard';
-import GridLayout from '@/app/components/GridLayout';
+import Search from "@/app/components/Search";
+import DepartmentCard from "@/app/components/DepartmentCard";
+import GridLayout from "@/app/components/GridLayout";
 
 const page = () => {
   return (

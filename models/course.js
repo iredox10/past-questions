@@ -21,5 +21,6 @@ const course = new mongoose.Schema({
   ],
 });
 
-const Course = mongoose.model("course", course);
+const Course = mongoose.models.level || mongoose.model("course", course);
 export default Course;
+r;

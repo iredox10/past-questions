@@ -17,5 +17,6 @@ const semester = new mongoose.Schema({
   ],
 });
 
-const Semester = mongoose.model("semester", semester);
+const Semester =
+  mongoose.models.semester || mongoose.model("semester", semester);
 export default Semester;

@@ -18,5 +18,6 @@ const grandChild = new mongoose.Schema(
   { timestamps: true },
 );
 
-const GrandChild = mongoose.model("grandchid", grandchild);
+const GrandChild =
+  mongoose.models.grandchild || mongoose.model("grandchild", grandChild);
 export default GrandChild;

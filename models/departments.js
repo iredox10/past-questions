@@ -1,21 +1,28 @@
 import mongoose from "mongoose";
 
-const department = mongoose.Schema({
-    name:{
-        type: String,
-        required: true,
-        unique: true
+const department = mongoose.Schema(
+  {
+    name: {
+      type: String,
+      required: true,
+      unique: true,
     },
     desc: {
-        type: String,
-        required: true,
-        unique: true
+      type: String,
+      required: true,
+      unique: true,
     },
-    logo:String,
-    sessions:[{
-        ref: 'session',
-        type: mongoose.Schema.Types.ObjectId
-    }]
-},{timestamps:true})
+    logo: String,
+    sessions: [
+      {
+        ref: "session",
+        type: mongoose.Schema.Types.ObjectId,
+      },
+    ],
+  },
+  { timestamps: true },
+);
 
-const Department =mongoose.model.department || mongoose.model('department', department)
+const Department =
+  mongoose.models.department || mongoose.model("department", department);
+export default Department;
